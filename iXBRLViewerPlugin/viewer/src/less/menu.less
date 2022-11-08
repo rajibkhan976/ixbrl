@@ -1,0 +1,140 @@
+// Copyright 2019 Workiva Inc.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+#ixv {
+  #top-bar {
+    .menu {
+      position: absolute;
+      right: 0;
+      top: 0;
+      line-height: @top-bar-height;
+      cursor: pointer;
+
+      .title {
+        padding-right: 3.2rem;
+        position: relative;
+      }
+
+      .title::after {
+        .icon-chevron-down();
+
+        font-size: 1.8rem;
+        position: absolute;
+        right: 1rem;
+      }
+
+      .content-container {
+        position: fixed;
+        top: @top-bar-height;
+        right: 0;
+        bottom: 0;
+        display: none;
+
+        .content {
+          line-height: initial;
+          background: #fff;
+          z-index: 5;
+          border: solid 1px @border-grey;
+          max-height: 100%;
+          overflow-y: auto;
+
+
+          .signed {
+            border-top: 1px solid #cbcbcb;
+          }
+          .highlight-0 {
+            &.checked {
+              background-color: @signed-highlight-0;
+            }
+            &:hover {
+              background-color: @signed-highlight-0;
+            }
+          }
+          .highlight-1 {
+            &.checked {
+              background-color: @signed-highlight-1;
+            }
+            &:hover {
+              background-color: @signed-highlight-1;
+            }
+          }
+          .highlight-2 {
+            &.checked {
+              background-color: @signed-highlight-2;
+            }
+            &:hover {
+              background-color: @signed-highlight-2;
+            }
+          }
+          .highlight-3 {
+            &.checked {
+              background-color: @signed-highlight-3;
+            }
+            &:hover {
+              background-color: @signed-highlight-3;
+            }
+          }
+          .highlight-4 {
+            &.checked {
+              background-color: @signed-highlight-4;
+            }
+            &:hover {
+              background-color: @signed-highlight-4;
+            }
+          }
+          .highlight-5 {
+            &.checked {
+              background-color: @signed-highlight-5;
+            }
+            &:hover {
+              background-color: @signed-highlight-5;
+            }
+          }
+          .highlight-6 {
+            &.checked {
+              background-color: @signed-highlight-6;
+            }
+            &:hover {
+              background-color: @signed-highlight-6;
+            }
+          }
+
+          .group {
+            border-bottom: solid 1px @border-grey;
+            border-top: solid 1px @border-grey;
+          }
+
+          .item {
+            position: relative;
+            padding: 10px 25px 10px 30px;
+            white-space: nowrap;
+
+
+            &.checkbox.checked::before {
+              .icon-tick();
+
+              position: absolute;
+              top: 12px;
+              left: 9px;
+            }
+          }
+        }
+      }
+    }
+
+    .signature-menu {
+      right: 180px;
+    }
+  }
+}

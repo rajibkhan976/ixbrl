@@ -1,0 +1,56 @@
+{
+  "name": "ixbrl-viewer",
+  "version": "0.0.0",
+  "description": "iXBRL Viewer",
+  "main": "iXBRLViewerPlugin/viewer/src/js/ixbrlviewer.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev": "webpack --config iXBRLViewerPlugin/viewer/webpack.dev.js",
+    "prod": "webpack --config iXBRLViewerPlugin/viewer/webpack.prod.js",
+    "stylelint": "stylelint iXBRLViewerPlugin/viewer/src/less/*.less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:amanaconsulting/ixbrl-viewer.git"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "font-family-no-missing-generic-family-keyword": null,
+      "no-descending-specificity": null
+    }
+  },
+  "author": "",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.0.1",
+    "babel-preset-env": "^1.7.0",
+    "base64-inline-loader": "^1.1.1",
+    "bootstrap": "^4.3.1",
+    "bootstrap-less-port": "^2.2.1",
+    "chart.js": "^2.9.3",
+    "core-js": "^3.6.4",
+    "css-loader": "^3.4.2",
+    "dateformat": "^3.0.3",
+    "exceljs": "^4.0.1",
+    "file-saver": "^2.0.2",
+    "html-loader": "^0.5.5",
+    "interactjs": "^1.8.5",
+    "jest": "^26.0.1",
+    "jquery": "^3.4.1",
+    "less": "^3.11.1",
+    "less-loader": "^6.0.0",
+    "lunr": "^2.3.8",
+    "moment": "^2.24.0",
+    "stylelint": "^13.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  },
+  "devDependencies": {},
+  "license": "Apache-2.0"
+}
